@@ -1,0 +1,306 @@
+/**
+ * WooCommerce Specific Styles
+ */
+
+/* Shop Grid */
+.woocommerce .products {
+    margin: 0 -15px;
+}
+
+.woocommerce ul.products li.product {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__link {
+    display: block;
+    text-decoration: none;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.woocommerce ul.products li.product .price {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.woocommerce ul.products li.product .price del {
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.woocommerce ul.products li.product .price ins {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Single Product */
+.woocommerce div.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.woocommerce div.product .woocommerce-product-gallery {
+    position: relative;
+}
+
+.woocommerce div.product .summary {
+    padding: 20px 0;
+}
+
+.woocommerce div.product .product_title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.woocommerce div.product .price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Cart Page */
+.woocommerce table.shop_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.woocommerce table.shop_table th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+
+.woocommerce .cart-collaterals {
+    margin-top: 40px;
+}
+
+.woocommerce .cart_totals {
+    float: right;
+    width: 48%;
+}
+
+.woocommerce .cart_totals table {
+    width: 100%;
+}
+
+.woocommerce .cart_totals h2 {
+    margin-bottom: 20px;
+}
+
+/* Checkout */
+.woocommerce-checkout .col2-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.woocommerce-checkout #order_review_heading {
+    margin: 30px 0 20px;
+}
+
+.woocommerce form .form-row {
+    margin-bottom: 20px;
+}
+
+.woocommerce form .form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.woocommerce form .form-row input[type="text"],
+.woocommerce form .form-row input[type="email"],
+.woocommerce form .form-row input[type="tel"],
+.woocommerce form .form-row textarea,
+.woocommerce form .form-row select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Buttons */
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background 0.3s;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+    background: #555;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background: #77a464;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    background: #5e8352;
+}
+
+/* Sale Badge */
+.woocommerce span.onsale {
+    background: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Pagination */
+.woocommerce nav.woocommerce-pagination {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .woocommerce ul.products {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .woocommerce div.product {
+        grid-template-columns: 1fr;
+    }
+
+    .woocommerce-checkout .col2-set {
+        grid-template-columns: 1fr;
+    }
+
+    .woocommerce .cart_totals {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Breadcrumb */
+.woocommerce .woocommerce-breadcrumb {
+    margin: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.woocommerce .woocommerce-breadcrumb a {
+    color: #777;
+}
+
+.woocommerce .woocommerce-breadcrumb a:hover {
+    color: #333;
+}
+
+/* Reviews */
+.woocommerce #reviews #comments ol.commentlist {
+    list-style: none;
+    padding: 0;
+}
+
+.woocommerce #reviews #comments ol.commentlist li {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.woocommerce #review_form #respond {
+    margin-top: 30px;
+}
+
+.woocommerce .star-rating {
+    color: #ffa500;
+}
+
+/* Account Pages */
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    float: left;
+    width: 25%;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li:last-child {
+    border-bottom: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    float: right;
+    width: 70%;
+}
