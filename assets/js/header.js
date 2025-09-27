@@ -106,7 +106,7 @@
                     hoverTimeout = setTimeout(() => {
                         $trigger.attr('aria-expanded', 'false');
                         $menu.attr('aria-hidden', 'true');
-                    }, 300);
+                    }, 500);
                 });
 
                 // Keyboard navigation
