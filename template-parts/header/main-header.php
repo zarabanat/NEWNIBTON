@@ -58,8 +58,7 @@
                     <button type="submit"
                             class="search-submit"
                             aria-label="<?php esc_attr_e('Submit search query', 'minimal-woo'); ?>">
-                        <span class="screen-reader-text"><?php esc_html_e('Search', 'minimal-woo'); ?></span>
-                        <?php echo newnibton_get_svg_icon('search', 'search-icon'); ?>
+                        🔍
                     </button>
                 </form>
                 <div id="search-description" class="screen-reader-text">
